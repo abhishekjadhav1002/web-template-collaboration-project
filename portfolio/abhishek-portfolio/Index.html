@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>my portfolio</title>
+    <script src="https://kit.fontawesome.com/551374c4d5.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Navbar -->
+   <div id="header">
+      <div class="Contenar">
+         <nav>
+            <h1 class="logo">Abhishek.</h1>
+            <ul id="saidmenu">
+               <li><a href="">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#services">Skills</a></li>
+               <li><a href="#portfolio">Project</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+         </nav>
+         <div class="header-text">    
+            <!-- <P>web Developer</P> -->
+            <h1>Hi, I'm Abhishek Jadhav </h1>
+            <p>Web Developer building the Frontend and Backend of the Websites and web
+               Applications <br> that leads to the success of the overall product</p>
+         </div>
+      </div>
+   </div>
+
+   <!------------------ About----------------- -->
+
+  <div id="about">
+   <div class="contenar">
+      <div class="row">
+         <div class="about-col-1">
+            <img src="./images/my photo.jpg" >
+         </div>
+         <div class="about-col-2">
+            <h1 class="Sub-title">About Me</h1>
+            <p class="about-text">Here you will find more information about me,what i do and my current skills mostly in terms of programming and technology. <br> I'm a Full Stack Web Developer building the Fornt-end and Back-end of
+            Website and Web Application that leads to success of the overall product.
+            Check out some of my work in the Project section. <br>I also like sharing content related to the stuff that l have learned
+            over the years in Full Stack Web Developer so it
+            can help other people of the dev community. Feel free to connect
+            or follow me on my Linkedin where I post useful content related to
+             Web Development and Programming.</p>
+            <div class="tab-titles">
+               <p class="tab-links active-link" onclick="opentab('Skills')">Education</p>
+               <p class="tab-links" onclick="opentab('Experience')">Certications</p>
+               <p class="tab-links" onclick="opentab('Education')">Resume</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+               <ul>
+                  <li><span>Completed 2019-2022</span><br>Bachelor of Computer Science</li>
+                  <li><span>Completed 2017-2019</span><br>Pre - University Course - Science</li>
+                  <li><span>2017</span><br>SSLC</li>
+               </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+               <ul>
+                  <li><span></span><br> <li>- Full Stack Web Development</li> </li>
+                  <li><span></span><br>- Front End Development</li>
+                  <li><span></span><br>- CSS Tutorial</li>
+               </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+               <ul>
+                  <li><a href="./images/Abhishek jadhav cv.pdf" download class=" btn3">Resume</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+  </div>
+
+   <!-- -----------Services -------------->
+
+   <div id="services"> 
+      <div class="cntenar">
+         <h1 class="Sub-title">My Skills</h1>
+         <div class="service-list">
+            <div>
+               <i class="fa-solid fa-code"></i>
+               <h2>- HTML</h2>
+               <h2>- CSS</h2>
+               <H2>- JAVA SCRIPT</H2>
+              
+            </div>
+            <div>
+               <i class="fa-solid fa-crop"></i>
+               <h2>- UI/UX</h2>
+               <h2>- React</h2>
+               <H2>- Git</H2>
+               
+            </div>
+            <div>
+               <i class="fa-brands fa-app-store"></i>
+               <h2>- App Design</h2>
+               <H2>- Responsive </H2>
+               <h2>- SQL Basics</h2>
+               
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Project -->
+   <div id="portfolio">
+      <div class="container">
+         <h1 class="Sub-title">PROJECTS</h1>
+         <div class="work-list">
+            <div class="work">
+               <img src="./images/Music.jpeg">
+               <div class="layer">
+                  <h3>Music Festival Project</h3>
+               </div>
+            </div>
+            <div class="work">
+               <img src="./images/BMW.jpg">
+               <div class="layer">
+                  <h3>BMW Motorrad Project</h3>
+               </div>
+            </div>
+            
+            <div class="work">
+              <img src="./images/Xplore - Copy.jpeg">
+              <div class="layer">
+                <h3>Xplore Project</h3>
+                <p></p>
+               </div>
+            </div> 
+            <div class="work">
+               <img src="./images/UL.jpg">
+               <div class="layer">
+                 <h3>UL Design</h3>
+               </div>
+            </div> 
+            <div class="work">
+               <img src="./images/Impics.jpeg">
+               <div class="layer">
+                 <h3>ImPics</h3>
+               </div>
+            </div> 
+         </div>
+      </div>
+   </div>
+
+<!---------- contact Form------ -->
+   <div id="contact">
+      <div class="container">
+         <div class="row">
+            <div class="contact-left">
+               <h1 class="Sub-title">Contact me</h1>
+               <p> <i class="fa-solid fa-paper-plane"></i>abhitech1002@gamil.com</p>
+               <p><i class="fa-solid fa-phone"></i>8088135607</p>
+               <div class="socil-icons">
+                  <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="https://www.linkedin.com/in/abhishek-jadhav-3b743a267"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+               </div>
+               <a href="./images/Abhishek jadhav cv.pdf" download class="btn btn2">Download CV</a>
+
+            </div>
+            <div class="contact-right">
+               <form>
+                  <input type="text" name="name" placeholder="Your Name" required>
+                  <input type="email" name="email" placeholder="Your Email" required>
+                  <textarea name="Masssage" rows="6" placeholder="Your Massage"></textarea>
+                  <button type="submit" class="btn btn2">Submit</button>
+               </form>
+            </div>
+         </div>
+      </div>
+      <div class="copy-right">
+         <p>Copyright Made by Abhishek jadhav</p>
+      </div>
+   </div>
+
+   <!-- .........script.............. -->
+
+   <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+       for(tablink of tablinks){
+         tablink.classList.remove("active-link");
+       }
+       for(tabcontent of tabcontents){
+         tabcontent.classList.remove("active-tab");
+       }
+       event.currentTarget.classList.add("active-link");
+       document.getElementById(tabname).classList.add("active-tab");
+         
+      }
+
+      
+   </script>
+
+   <script>
+      var saidmenu = document.getElementById("saidmenu");
+
+      function openmenu(){
+         saidmenu.style.right = "0";
+      }
+      function closemenu(){
+         saidmenu.style.right = "-200px";
+      }
+
+
+   </script>
+
+</body>
+</html>
