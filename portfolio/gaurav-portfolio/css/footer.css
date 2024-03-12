@@ -1,0 +1,40 @@
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+	padding: 2rem 3rem;
+}
+
+footer p {
+  margin-bottom: 10px;
+	font-size: 1.6rem;
+	color: rgba(0, 0, 0, 0.904);
+	font-weight: 500;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer ul li a {
+  text-decoration: none;
+	font-size: 1.6rem;
+	color: rgba(0, 0, 0, 0.904);
+	font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 10px;
+  }
+  
+  footer {
+    flex-direction: column;
+  }
+}

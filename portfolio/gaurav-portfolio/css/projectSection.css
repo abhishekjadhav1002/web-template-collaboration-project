@@ -1,0 +1,89 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20rem;
+}
+
+.project > h2 {
+  font-size: 5rem;
+}
+
+.project ul {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+
+.card {
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+}
+
+.cardContent {
+  padding: 20px;
+}
+
+.cardTitle {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cardDescription {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.card .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  background-color: #2506ad;
+  border-radius: 9px;
+  color: white;
+  height: 4rem;
+  width: fit-content;
+  padding: 0px 20px;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1049px) {
+  .project ul {
+    margin-top: 5rem;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 800px) {
+	.project h2{
+		font-size: 3rem;
+	}
+}
+
+@media (max-width: 525px) {
+
+	.project {
+		padding: 0 1rem;
+	}
+	
+	.card {
+		width: 90%;
+	}
+
+	.project ul {
+    gap: 2rem;
+  }
+}
+

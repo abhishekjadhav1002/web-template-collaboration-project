@@ -1,0 +1,45 @@
+.about{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 20rem;
+}
+
+.about h2{
+	font-size: 5rem;
+}
+
+.about p{
+	font-size: 1.8rem;
+	text-align: center;
+	margin-top: 5rem;
+	color: rgba(0, 0, 0, 0.719);
+	font-weight: 500;
+}
+
+@media (max-width: 951px) {
+	.about{
+		padding: 0 10rem;
+	}
+}
+
+@media (max-width: 700px) {
+	.about{
+		padding: 0 5rem;
+	}
+}
+
+@media (max-width: 500px) {
+	.about{
+		padding: 0 1rem;
+	}
+
+	.about h2{
+		font-size: 3rem;
+	}
+
+	.about p{
+		font-size: 1.6rem;
+	}
+}

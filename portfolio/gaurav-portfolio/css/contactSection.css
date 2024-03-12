@@ -1,0 +1,94 @@
+.contact{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 20rem;
+}
+
+.contact h2{
+	font-size: 5rem;
+}
+
+form{
+	width: 60%;
+	margin-top: 5rem;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: rgba(0, 0, 0, 0.829);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+	width: 100%;
+	padding: 15px 10px;
+	border: 1px solid #ccc;
+	border-radius: 9px;
+}
+
+.form-group textarea {
+	height: 100px;
+	width: 100%;
+}
+
+.form-group button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	font-weight: 500;
+	padding: 0 20px;
+	background-color: #2506ad;
+	color: #fff;
+	border: none;
+	border-radius: 9px;
+	cursor: pointer;
+	height: 4rem;
+}
+
+.form-group button:hover {
+	background-color: rgba(38, 7, 177, 0.87);
+}
+
+@media (max-width: 1049px) {
+
+	.contact{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0 5rem;
+	}
+
+  form{
+		width: 80%;
+	}
+}
+
+@media (max-width: 800px) {
+	.contact h2{
+		font-size: 3rem;
+	}
+}
+
+
+@media (max-width: 500px) {
+
+	.contact{
+		padding: 0 1rem;
+	}
+
+  form{
+		width: 90%;
+	}
+}
