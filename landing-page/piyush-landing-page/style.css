@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+  }
+  
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  header {
+    min-height: 35vh;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column;
+    gap: 0.4rem;
+  
+  }
+  
+  /* Hamburger menu css */
+  .hamburger{
+    display: none;
+    cursor: pointer;
+  
+  }
+  .bar{
+    display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      background-color: white;
+      transition: all 0.3s ease-in-out;
+      background-color: white;
+  }
+  
+  @media (max-width:830px) {
+    .hamburger{
+      display: block;
+  }
+  .hamburger.active .bar:nth-child(2){
+      opacity:0;
+  }
+  .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+  }
+  .navbar-container{
+    position: relative;
+    top: 0;
+  }
+  .nav-menu{
+      position: fixed;
+      left: -100%;
+      top:0;
+      gap: 0;
+      flex-direction: column;
+      background-color: #000000;;
+      width: 100%;
+      text-align: center;
+      z-index: 1000;
+  
+  }
+  .nav-item{
+      margin: 16px 0;
+  
+  }
+  .nav-menu.active{
+      left: 0;
+  }
+  
+  }
+  
+  
+  
+  
+  header .headings-container h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 84px;
+    line-height: 25px;
+    margin: 50px 0 24px 0;
+    padding: 10px;
+  }
+  
+  header .headings-container h3 {
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.4rem;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+  }
+  
+  .navbar-container ul {
+    display: flex;
+    padding: 5px;
+    margin: 15px 0;
+    align-items: center;
+    justify-content: space-around;
+    gap: 9rem;
+  
+  }
+  
+  .navbar-container ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 1rem;
+  }
+  
+  .navbar-container ul li a {
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .navbar-container ul li a:hover {
+    color: #ffce0a;
+    
+  }
+  .navbar-container ul li:hover {
+    transform: scale(1.2);
+  }
+  
+  .separator {
+    width: 38%;
+    text-align: center;
+    background-color: #b7b6b6;
+    height: 0.2rem;
+    margin: 12px auto;
+  }
+  
+  section {
+      min-height: 80vh;
+      padding: 2rem 9%;
+    }
+  
+  .hi-heading {
+    color: #222222;
+    font-family: "Poppins", Sans-serif;
+    font-size: 172px;
+    font-weight: 700;
+    line-height: 154.8px;
+    letter-spacing: -12px;
+    text-shadow: 5px -5px 0px #FFFFFF;
+    text-align: center;
+    margin: -50px auto;
+  }
+  
+  .hero-img-container img{
+    width: 42%;
+    max-width: 37%;
+    display: block;
+    margin: 0 auto;
+    height: 412px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 1000px 1000px 1000px 1000px;
+  }
+  .hero h1{
+    text-align: center;
+    margin: 3rem auto;
+    font-size: 48px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  .about{
+      position: relative;
+      background-image: url("aboutimg.png") ;
+      background-color: #1d1c1c;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      opacity: 0.8;
+      mix-blend-mode: multiply;
+      background-attachment: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     
+  }
+  .about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 0 10%;
+  }
+  
+  .about p{
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    color: #ffffff;
+    line-height: 28px;
+    z-index: 100;
+  }
+  .program{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem 1rem;
+    flex-wrap: wrap;
+  }
+  .right-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+  
+  }
+  .right-content h2:nth-child(1){
+    font-family: "Lora", serif;
+    font-weight: 100;
+    font-size: 37px;
+  }
+  .right-content h2:nth-child(2){
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 37px;
+    font-style: italic;
+  }
+  .right-content p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .img-program{
+    width: 48%;
+  }
+  .img-program img{
+    width: 80%;
+      max-width: 98%;
+      height: 391px;
+      object-fit: cover;
+      object-position: center center;
+      border-radius: 300px 100px 100px 100px;
+      box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.12);
+  }
+  .btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+  button{
+    background-color: #252caa;
+    border-radius: 4px;
+    padding: 10px 20px;
+  }
+  .btn-container button a{
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    color: #ffffff;
+  }  
+  .all-headings{
+    color: #222222;
+    font-family: "Poppins", Sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    display: block;
+    text-align: center;
+  }
+  .cards-container{
+    min-height: 90vh;
+    max-width:  90vw;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+  }
+  .cards{
+    margin: 2rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .book-img-cont img{
+    width: 100%;
+    height: 100%;
+  }
+  .book-img-cont img:hover {
+    transform: scale(1.1) rotate(4deg);
+  }
+  .book-name{
+    text-align: center;
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #222222;
+    line-height: 29px;
+  }
+  .best-seller{
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: #3b3b3b;
+  }
+  .achieve-cont{
+    min-height: 50vh;
+    max-width:  90vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .achieve-cards{
+    margin: 2rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .achieve-cards .svgs svg{
+    width: 8rem;
+    height: 8rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+  .achieve-cards div:nth-child(2){
+    width: 10rem;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #000000;
+    line-height: 18px;
+  }
+  
+  @media (max-width: 767px){
+    .hero-img-container img{
+      width: 89%;
+      max-width: 59%;
+      height: 223px;
+      object-fit: cover;
+  }
+    .hi-heading{
+      font-size: 48px;
+      line-height: 0em;
+      letter-spacing: 0px;
+      margin: -10px auto;
+    }
+    .hero h1{
+      display: block;
+      min-height: 1.5rem;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .headings-container h1{
+      font-weight: 500;
+      line-height: 11px;
+      font-size: 35px !important;
+    }
+    .headings-container h3{
+      font-weight: 500;
+      line-height: 1px;
+      letter-spacing: 0.2rem !important;
+      font-size: 13px !important;
+    }
+    .about p{
+      font-size: 15px;
+      line-height: 24px;
+    }
+    .all-headings{
+      font-size: 28px;
+    }
+    .best-seller{
+      margin: 5px;
+      line-height: 17px;
+      font-weight: 700;
+    }
+  
+  }
+  
+  
+  
+  @media (max-width: 609px){
+    .right-content {
+      gap: 1rem;
+      width: 75%;
+      margin: 10px;
+    }
+    .img-program {
+      width: 80%;
+      margin: 10px auto;
+  }
+  }
