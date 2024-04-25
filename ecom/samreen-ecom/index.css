@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600;700&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 280px;
+   margin: 10px;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.cards-container>h3{
+    font-size: 22px;
+}
+.category>h1{
+    margin: 2vw;
+    margin-left: 80px;
+    font-size: 4.5vw;
+}
+.error{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.error img{
+  height: 80vh;
+}
+.card-img{
+    display: flex;
+    width: 250px;
+    height: 240px;
+   
+}
+.cards :hover{
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.card-list{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.foot-container{
+    height: 80px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+}
+.body-img >img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+.shimmer-container{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.shimmer-card{
+    width: 250px;
+    height: 280px;
+    margin: 20px;
+    text-align: center;
+    background-color: gray;
+}
+.login-btn{
+    width: 80px;
+    font-size: 1.2vw;
+    height: 33px;
+    border-radius: 1px;
+}
+.search-bar{
+    margin-top: 20px;
+    width: 50%;
+   
+}
+.search-box{
+    width: 80%;
+    height: 40%;
+    border-radius: 2px;
+
+}
+.search-bar > button{
+    width: 15%;
+    height: 45%;
+    border-radius: 2px;
+}
+.search-bar > input{
+   font-size: 15px;
+   margin-left: 3px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width:600px)
+{
+    .nav-list{
+        font-size: 3.8vw;
+    }
+}
+/* small devices (portarits tablets and large phones, 600px and up */
+@media (min-width: 600px)
+{
+ 
+}
+/* medium device (landscape tablets, 768px and up */
+@media (min-width:768px) {
+    
+}
+/* Large device (laptops/desktop, 992px and up) */
+@media (min-width:992px) {
+    
+}
+/*Extra Large device (laptops/desktop,1200px and up) */
+@media (min-width:1200px) {
+    
+}
