@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0px;
+  margin: 0px;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+/*   justify-content: center; */
+/*   align-items: center; */
+  height: 100%;
+  width: 100%;
+  padding: 50px 80px;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header img{
+  width: 100px;
+  height: 100px;
+}
+
+header h1{
+  color: #00D2FC;
+  font-size: 16px;
+  font-weight: normal;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.main2{
+  margin: 25px 0px 35px 0px;
+}
+
+.main2 p{
+  margin: 0px 150px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.main3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px 50px 0px 50px;
+  border: 2px solid #00D2FC;
+  border-radius: 9px;
+  padding: 20px 15px;
+  box-shadow: 10px 10px 123px 13px #15879e;
+}
+
+.main3 h2{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #00D2FC;
+}
+
+.main3 p{
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main3 .btn a{
+  text-align: center;
+  min-width: 120px;
+  padding: 8px 10px;
+  border: 2px solid #00D2FC;
+  color: #00D2FC;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  text-decoration: none;
+  box-shadow: 14px 14px 123px 13px #15879e;
+  transition: 0.5s;
+}
+
+.main3 .btn a:hover{
+  background-color: #00D2FC;
+  color: #000000;
+  box-shadow: -19px -20px 123px 44px #15879e;
+}
+
+.main input{
+  margin: 15px 120px 20px 120px;
+  font-size: 16px;
+  padding: 10px;
+  border: 2px solid #00D2FC;
+  border-radius: 9px;
+  color: #00D2FC;
+  background-color: #000000;
+}
+
+
+.ig{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #00D2FC;
+  border-radius: 25px;
+  width: fit-content;
+  padding: 0px 25px;
+  margin-left: auto;
+  margin-right: auto;
+/*   box-shadow: 14px 14px 123px 13px #15879e; */
+}
+
+.ig .iglogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ig .iglogo img{
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.ig .post p{
+  margin: 0px 20px;
+  color: #ffffff;
+}
+
+.ig .post p span{
+  font-weight: bold;
+  color: #00D2FC;
+}
+
+.ig .followers p{
+  color: #ffffff;
+}
+
+.ig .followers p span{
+  font-weight: bold;
+  color: #00D2FC;
+}
+
+textarea{
+  resize: none;
+  margin: 15px 120px 20px 120px;
+  font-size: 16px;
+  padding: 10px;
+  border: 2px solid #00D2FC;
+  border-radius: 9px;
+  color: #00D2FC;
+  background-color: #000000;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  margin-top: 20px;
+}
+
+footer a{
+  text-decoration: none;
+  color :#00D2FC; 
+}
+
+
+@media (max-width: 767px) {
+  .main{
+    padding: 20px 20px;
+  }
+
+  .main input{
+    margin: 15px 40px 20px 40px;
+  }
+
+  textarea{
+    margin: 15px 40px 20px 40px;
+  }
+}
+
+@media (max-width: 650px){
+  .main{
+    padding: 15px 15px;
+  }
+  
+  .main2 p{
+    margin: 0px 50px;
+  }
+}
+
+@media (max-width: 550px){
+  .main3{
+    margin: 30px 30px 0px 30px;
+  }
+
+  .main input{
+    margin: 15px 30px 20px 30px;
+  }
+
+  textarea{
+    margin: 15px 30px 20px 30px;
+  }
+}
+
+@media (max-width : 500px){
+  .main{
+    padding: 15px 10px;
+  }
+
+  .main2 p{
+    margin: 0px 30px;
+  }
+
+  .main3{
+    margin: 30px 20px 0px 20px;
+    padding: 10px 15px;
+  }
+
+  .main3 h2{
+    font-size: 18px;
+  }
+
+  .main3 p{
+    font-size: 14px;
+  }
+
+  .main input{
+    margin: 10px 10px 15px 10px;
+  }
+
+  textarea{
+    margin: 10px 10px 15px 10px;
+  }
+
+  .ig{
+    padding: 0px 15px;
+  }
+}
+
+
+@media (min-width : 1324px){
+  .main{
+    padding: 50px 120px;
+  }
+}

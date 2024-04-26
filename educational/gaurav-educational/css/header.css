@@ -1,0 +1,61 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 10vw;
+}
+
+header .upperHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+header .upperHeader .logo {
+  font-size: 18px;
+  font-weight: 600;
+  color: darkblue;
+}
+
+header .upperHeader .info h2 {
+  font-size: 16px;
+}
+
+header .upperHeader .info p {
+  font-size: 15px;
+}
+
+header .lowerHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+header .lowerHeader nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .lowerHeader nav ul li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 5px;
+  padding: 5px 15px;
+}
+
+header .lowerHeader nav ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #000;
+  opacity: 0.8;
+  font-weight: 500;
+}
